@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>MindsLoom – Top Digital Marketing & SEO Company India</title>
+    <meta name="description"
+        content="MindsLoom is a leading Digital Marketing & SEO Agency in India. We help businesses grow with SEO, content marketing, and digital strategies.">
+    <meta name="keywords"
+        content="MindsLoom, digital marketing India, SEO company India, SEO agency, content marketing, online marketing, growth strategies, top marketing agency">
+    <meta name="msvalidate.01" content="C8A862FC63849A014501B3257B7FEBDF"   />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mindsloom.com/">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" href="android-chrome-512x512.png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Julius+Sans+One&family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Email JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("0n2IqI7pqVMo-pnWM");
+        })();
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#23423f',
+                        secondary: '#f4eee0',
+                        beige: '#f5f5dc'
+                    },
+                    fontFamily: {
+                        'Josefin Sans': ['Josefin Sans', 'sans-serif'],
+                        'julius': ['Julius Sans One', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'noto': ['Noto Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom animations and effects */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes navFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Navigation hover effects */
+        .nav-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .nav-item:hover {
+            animation: navFloat 0.9s ease-in-out;
+        }
+
+        /* Transparent header navigation hover */
+        .header-transparent .nav-item:hover {
+            color: rgba(244, 238, 224, 0.9) !important;
+        }
+
+        /* Scrolled header navigation hover */
+        .header-scrolled .nav-item:hover {
+            color: #23423f !important;
+        }
+
+        /* Social icons hover animation */
+        .social-icon {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .social-icon:hover {
+            animation: navFloat 0.9s ease-in-out;
+        }
+
+        .header-transparent .social-icon:hover {
+            color: rgba(244, 238, 224, 0.9) !important;
+        }
+
+        .header-scrolled .social-icon:hover {
+            color: #23423f !important;
+        }
+
+        /* Slide in animations */
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes logoFlow {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .logo-flow {
+            animation: logoFlow 20s linear infinite;
+        }
+
+        .floating-card {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-dot {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(120deg, #d9cbb2 0%, #c7b491 50%, #f4eee0 100%);
+        }
+
+        .gradient-dark {
+            background: linear-gradient(145deg, #253936 0%, #23423f 20%, rgba(218, 201, 160, 0.75) 75%, #e8ddc3 90%, #f4eee0 100%);
+        }
+
+        .gradient-card {
+            background: linear-gradient(135deg, #f4eee0 0%, #e8ddc3 30%, rgba(218, 201, 160, 0.8) 70%, #d9cbb2 100%);
+        }
+
+        .gradient-accent {
+            background: linear-gradient(90deg, #23423f 0%, rgba(218, 201, 160, 0.9) 50%, #f4eee0 100%);
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(244, 238, 224, 0.1);
+        }
+
+        /* Swiper customization */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #23423f !important;
+            background: rgba(244, 238, 224, 0.9);
+            border-radius: 50%;
+            width: 44px !important;
+            height: 44px !important;
+            margin-top: -22px !important;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 18px !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: #23423f !important;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1 !important;
+        }
+
+        /* Modern Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(244, 238, 224, 0.1);
+            border-radius: 10px;
+            margin: 2px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #23423f 0%, rgba(35, 66, 63, 0.8) 50%, #23423f 100%);
+            border-radius: 10px;
+            border: 1px solid rgba(244, 238, 224, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #1a332f 0%, #23423f 50%, #2d5249 100%);
+            transform: scale(1.1);
+            box-shadow: 0 2px 8px rgba(35, 66, 63, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(135deg, #0f1f1c 0%, #1a332f 50%, #23423f 100%);
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: rgba(244, 238, 224, 0.1);
+        }
+
+        /* Firefox Custom Scrollbar */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #23423f rgba(244, 238, 224, 0.1);
+        }
+
+        /* Custom scrollbar for specific elements */
+        .custom-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #23423f rgba(244, 238, 224, 0.2);
+        }
+
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(244, 238, 224, 0.2);
+            border-radius: 8px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #23423f, rgba(35, 66, 63, 0.7));
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #1a332f, #23423f);
+            box-shadow: 0 1px 4px rgba(35, 66, 63, 0.4);
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7051CK0RY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q7051CK0RY');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P4HFBGC3');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="font-Josefin Sans bg-secondary overflow-x-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4HFBGC3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Intro Loader -->
+    <div id="intro-loader" class="fixed inset-0 z-50 flex items-center justify-center gradient-bg">
+        <div class="text-center fade-in-up">
+            <div
+                class="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-6 bg-secondary rounded-2xl flex items-center justify-center shadow-2xl">
+                <span class="text-2xl sm:text-3xl font-julius text-primary">ML</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-julius text-secondary mb-2">MindsLoom</h1>
+            <p class="text-sm sm:text-base text-secondary/80 font-light">Where minds weave and ideas intertwine</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Home Link & Social Links (Desktop) -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium text-lg">Home</a>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_mindsloom_"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://x.com/mindsloom"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mindsloom/"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="flex items-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                    <a href="index.html"
+                        class="w-10 h-10 lg:w-12 lg:h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                        <span class="text-lg lg:text-xl font-julius text-secondary">ML</span>
+                    </a>
+                </div>
+
+                <!-- Navigation (Desktop) -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="pages/work.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Work</a>
+                    <a href="pages/services.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                    <a href="pages/blogs.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Blogs</a>
+                    <a href="#about"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#contact"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-black hover:text-primary transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary/95 backdrop-blur-sm">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block text-beige font-medium py-2 border-l-4 border-beige p-4">Home</a>
+                <a href="pages/work.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Work</a>
+                <a href="pages/services.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Services</a>
+                <a href="pages/blogs.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Blogs</a>
+                <a href="#about"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">About</a>
+                <a href="#contact"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Contact</a>
+                <div class="flex items-center space-x-6 pt-4 border-t border-secondary/20">
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex items-center gradient-dark pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-20 lg:pb-0">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-white/10 rounded-full blur-lg animate-bounce"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-secondary/5 rounded-full blur-2xl animate-pulse"
+                style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/3 right-1/4 w-20 h-20 bg-white/5 rounded-full blur-lg animate-bounce"
+                style="animation-delay: 3s;"></div>
+
+            <!-- Floating Icons -->
+            <div class="absolute top-36 left-1/3 text-secondary/20 text-4xl animate-bounce"
+                style="animation-delay: 0.5s;">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="absolute top-48 right-1/2 text-secondary/20 text-3xl animate-bounce"
+                style="animation-delay: 1.5s;">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="absolute bottom-32 left-1/2 text-secondary/20 text-3xl animate-bounce"
+                style="animation-delay: 2.5s;">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="absolute top-1/2 right-20 text-secondary/20 text-2xl animate-bounce"
+                style="animation-delay: 3.5s;">
+                <i class="fas fa-chart-line"></i>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left space-y-6 lg:space-y-8 px-4 py-8 sm:px-6 sm:py-12 lg:px-0 lg:py-0">
+                    <div class="space-y-4">
+                        <h1
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-julius text-secondary leading-normal">
+                            Your Growth Partner for AI, Marketing, and Next-Gen Digital Solutions
+                        </h1>
+                        <!-- <h2
+                            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-julius text-secondary/90 leading-tight">
+
+                        </h2>
+                        <h3
+                            class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-julius text-secondary/80 leading-tight">
+
+                        </h3> -->
+                    </div>
+
+                    <p
+                        class="text-lg sm:text-xl md:text-xl lg:text-2xl text-secondary/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        We combine Artificial intelligence and human creativity to deliver services across AI solutions,
+                        digital marketing, design, content, and development.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button id="get-quote-btn"
+                            class="bg-secondary text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:scale-105 transform transition-all duration-300 shadow-lg">
+                            Get Quote
+                        </button>
+                        <button id="get-code-btn"
+                            class="border-2 border-secondary text-secondary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary hover:text-primary hover:scale-105 transform transition-all duration-300">
+                            AI Loom
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Content - Floating Industry Gallery -->
+                <div class="flex justify-center lg:justify-end relative">
+                    <div class="relative w-full max-w-md lg:max-w-lg h-96 lg:h-[500px]">
+                        <!-- Main floating cards -->
+                        <div class="absolute inset-0">
+                            <!-- Card 1 - Fintech -->
+                            <div class="floating-card absolute top-0 left-4 w-32 h-40 lg:w-40 lg:h-48 rounded-2xl shadow-2xl transform rotate-12 hover:rotate-6 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/30 to-pink-600/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-chart-line text-xl lg:text-2xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">FinTech</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Banking &
+                                        Finance</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 2 - Healthcare -->
+                            <div class="floating-card absolute top-8 right-0 w-36 h-44 lg:w-44 lg:h-52 rounded-2xl shadow-2xl transform -rotate-6 hover:rotate-0 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 0.5s; background: linear-gradient(135deg, #11998e 0%, #38ef7d 50%, #a8edea 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-green-500/30 to-teal-400/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-heartbeat text-xl lg:text-2xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span
+                                        class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">Healthcare</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Medical &
+                                        Wellness</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 3 - E-commerce -->
+                            <div class="floating-card absolute bottom-16 left-0 w-34 h-42 lg:w-42 lg:h-50 rounded-2xl shadow-2xl transform rotate-6 hover:rotate-3 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 1s; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/30 to-rose-400/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-shopping-cart text-xl lg:text-2xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span
+                                        class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">E-commerce</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Retail &
+                                        Shopping</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-pink-400 via-purple-500 to-rose-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 4 - SaaS -->
+                            <div class="floating-card absolute bottom-4 right-8 w-38 h-46 lg:w-46 lg:h-54 rounded-2xl shadow-2xl transform -rotate-12 hover:-rotate-6 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 1.5s; background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-red-500/30 to-blue-500/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-cloud text-xl lg:text-2xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">SaaS</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Software
+                                        Solutions</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-orange-400 via-red-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 5 - Fashion -->
+                            <div class="floating-card absolute top-20 left-1/2 transform -translate-x-1/2 w-30 h-38 lg:w-36 lg:h-44 rounded-2xl shadow-2xl rotate-3 hover:rotate-0 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 2s; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff8a80 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-rose-500/30 to-orange-400/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-tshirt text-lg lg:text-xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">Fashion</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Style & Trends</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-pink-400 via-rose-500 to-orange-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 6 - Web3 -->
+                            <div class="floating-card absolute bottom-32 left-1/2 transform -translate-x-1/2 translate-x-4 w-32 h-40 lg:w-38 lg:h-46 rounded-2xl shadow-2xl transform -rotate-8 hover:-rotate-4 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 2.5s; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #d299c2 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-purple-600/30 to-pink-500/20 flex flex-col items-center justify-center p-4 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fab fa-ethereum text-lg lg:text-xl group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs lg:text-sm font-bold text-center drop-shadow-lg">Web3</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Blockchain &
+                                        Crypto</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 7 - EdTech -->
+                            <div class="floating-card absolute top-12 left-12 w-28 h-36 lg:w-34 lg:h-42 rounded-2xl shadow-2xl transform rotate-15 hover:rotate-8 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 3s; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #43e97b 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-cyan-500/30 to-green-500/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-graduation-cap text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">EdTech</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Education &
+                                        Learning</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-green-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 8 - Real Estate -->
+                            <div class="floating-card absolute bottom-8 right-16 w-30 h-38 lg:w-36 lg:h-44 rounded-2xl shadow-2xl transform -rotate-10 hover:-rotate-5 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 3.5s; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-orange-500/30 to-red-400/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-home text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Real Estate</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Property &
+                                        Housing</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-amber-400 via-orange-500 to-red-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 9 - Food & Beverage -->
+                            <div class="floating-card absolute top-32 right-4 w-26 h-34 lg:w-32 lg:h-40 rounded-2xl shadow-2xl transform rotate-8 hover:rotate-4 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 4s; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #ffd1ff 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-red-500/20 via-orange-500/30 to-pink-400/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-utensils text-xs lg:text-sm group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Food & Beverage</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Restaurants &
+                                        Cafes</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-red-400 via-orange-500 to-pink-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 10 - Travel & Tourism -->
+                            <div class="floating-card absolute bottom-24 left-8 w-28 h-36 lg:w-34 lg:h-42 rounded-2xl shadow-2xl transform -rotate-5 hover:-rotate-2 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 4.5s; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #4facfe 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-sky-500/20 via-blue-500/30 to-cyan-400/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-plane text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Travel</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Tourism &
+                                        Hospitality</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-sky-400 via-blue-500 to-cyan-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 11 - IT Services -->
+                            <div class="floating-card absolute top-16 right-20 w-30 h-38 lg:w-36 lg:h-44 rounded-2xl shadow-2xl transform rotate-12 hover:rotate-6 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 5s; background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-slate-600/20 via-gray-700/30 to-blue-600/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-server text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">IT Services</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Infrastructure &
+                                        Support</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-slate-400 via-gray-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 12 - Cybersecurity -->
+                            <div class="floating-card absolute bottom-12 right-2 w-32 h-40 lg:w-38 lg:h-46 rounded-2xl shadow-2xl transform -rotate-8 hover:-rotate-4 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 5.5s; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ff9ff3 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-red-600/20 via-orange-600/30 to-pink-500/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-shield-alt text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Cybersecurity</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Security &
+                                        Protection</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-red-400 via-orange-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 13 - Cloud Computing -->
+                            <div class="floating-card absolute top-24 left-20 w-26 h-34 lg:w-32 lg:h-40 rounded-2xl shadow-2xl transform rotate-6 hover:rotate-3 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 6s; background: linear-gradient(135deg, #74b9ff 0%, #0984e3 50%, #a29bfe 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-blue-600/30 to-purple-500/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-cloud text-xs lg:text-sm group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Cloud</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Computing &
+                                        Storage</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 14 - DevOps -->
+                            <div class="floating-card absolute bottom-20 left-16 w-28 h-36 lg:w-34 lg:h-42 rounded-2xl shadow-2xl transform -rotate-12 hover:-rotate-6 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 6.5s; background: linear-gradient(135deg, #00b894 0%, #00cec9 50%, #74b9ff 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-teal-600/30 to-blue-500/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-cogs text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">DevOps</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Automation &
+                                        CI/CD</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-emerald-400 via-teal-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+
+                            <!-- Card 15 - Data Analytics -->
+                            <div class="floating-card absolute top-36 right-12 w-30 h-38 lg:w-36 lg:h-44 rounded-2xl shadow-2xl transform rotate-9 hover:rotate-4 hover:scale-110 hover:z-50 transition-all duration-700 overflow-hidden group cursor-pointer z-10"
+                                style="animation-delay: 7s; background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 50%, #fd79a8 100%);">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-violet-600/20 via-purple-700/30 to-pink-500/20 flex flex-col items-center justify-center p-3 text-white backdrop-blur-sm">
+                                    <div
+                                        class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2 group-hover:bg-white/30 transition-all duration-300">
+                                        <i
+                                            class="fas fa-chart-pie text-sm lg:text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                                    </div>
+                                    <span class="text-xs font-bold text-center drop-shadow-lg">Data Analytics</span>
+                                    <span class="text-xs opacity-90 text-center mt-1 font-medium">Insights &
+                                        Intelligence</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                </div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-violet-400 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating particles/dots -->
+                        <div class="absolute inset-0 pointer-events-none">
+                            <div class="floating-dot absolute top-4 right-4 w-2 h-2 bg-secondary/40 rounded-full"
+                                style="animation-delay: 0.2s;"></div>
+                            <div class="floating-dot absolute bottom-8 left-8 w-3 h-3 bg-secondary/30 rounded-full"
+                                style="animation-delay: 1.2s;"></div>
+                            <div class="floating-dot absolute top-1/2 right-12 w-1.5 h-1.5 bg-secondary/50 rounded-full"
+                                style="animation-delay: 2.2s;"></div>
+                            <div class="floating-dot absolute bottom-1/4 left-4 w-2.5 h-2.5 bg-secondary/35 rounded-full"
+                                style="animation-delay: 3.2s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div class="relative min-h-screen flex items-center justify-center p-4">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+                <div class="p-6 lg:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl lg:text-3xl font-julius text-primary">Get Your Quote</h2>
+                        <button id="close-modal" class="text-gray-400 hover:text-gray-600 text-2xl">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <form id="quote-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" name="name" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" name="phone"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <textarea name="details" rows="4"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none"></textarea>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <input type="checkbox" id="captcha" required
+                                class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                            <label for="captcha" class="text-sm text-gray-700">I'm not a robot</label>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-primary text-secondary py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-lg">
+                            Submit Quote Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Flow Section -->
+    <section class="py-16 lg:py-20 gradient-card">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 class="text-2xl lg:text-3xl font-julius text-primary text-center mb-12 lg:mb-16">
+                Brands Our Experts Have Worked With
+            </h2>
+
+            <div class="overflow-hidden">
+                <div class="logo-flow flex items-center space-x-8 lg:space-x-12">
+                    <!-- Kurkure -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-sky-400 to-indigo-900 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/kurkure-logo03227888-522c-466b-a8a5-bb7c63aa103d.png"
+                            alt="Kurkure Logo" class="object-cover">
+                    </div>
+                    <!-- Doritos -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-red-600 via-red-500 to-yellow-300 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/doritos-logo.png"
+                            alt="Doritos Logo" class="object-cover">
+                    </div>
+                    <!-- Timex -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-yellow-200 via-orange-200 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://cdn.shopify.com/s/files/1/0787/5375/9521/files/black-logo.svg?v=1690264497"
+                            alt="Timex Logo" class="object-cover">
+                    </div>
+                    <!-- Samsung -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://images.samsung.com/is/image/samsung/assets/us/about-us/brand/logo/pc/720_600_1.png?$720_N_PNG$"
+                            alt="Samsung Logo" class="object-cover">
+                    </div>
+                    <!-- Bella Vita -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-sky-400 to-white backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://bellavitaorganic.com/cdn/shop/files/Bella_Vita_Logo_360_E_2x_White.png?height=60&v=1716533001"
+                            alt="Bellavita Logo" class="object-cover">
+                    </div>
+                    <!-- Mountain Dew -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-[#07703C] via-[#94C93D] to-[#231F20] backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/mountain-dew-logo.png"
+                            alt="Mountain Dew Logo" class="object-cover">
+                    </div>
+                    <!-- Pepsi -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-[#0096D6] to-[#DF002C] backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/pepsi-logo.png"
+                            alt="Pepsi Logo" class="object-cover">
+                    </div>
+                    <!-- Gillette -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-[#003B5C] via-[#A7A8AA] to-[#FFFFFF] backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://cdn11.bigcommerce.com/s-dukhrgn8mp/images/stencil/original/content/img/header/m.Logo_Gillette_Blue.png"
+                            alt="Gillette Logo" class="object-cover">
+                    </div>
+                    <!-- UPI -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-[#EF7102] to-[#018136] backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.npci.org.in/images/npci/new-logo1.png" alt="NCPI Logo"
+                            class="object-cover">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <!-- Kurkure -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-sky-400 to-indigo-900 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/kurkure-logo03227888-522c-466b-a8a5-bb7c63aa103d.png"
+                            alt="Kurkure Logo" class="object-cover">
+                    </div>
+                    <!-- Doritos -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-red-600 via-red-500 to-yellow-300 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://www.pepsicoindia.co.in/images/indialibraries/brands-new/doritos-logo.png"
+                            alt="Doritos Logo" class="object-cover">
+                    </div>
+                    <!-- Timex -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-yellow-200 via-orange-200 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://cdn.shopify.com/s/files/1/0787/5375/9521/files/black-logo.svg?v=1690264497"
+                            alt="Timex Logo" class="object-cover">
+                    </div>
+                    <!-- Samsung -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://images.samsung.com/is/image/samsung/assets/us/about-us/brand/logo/pc/720_600_1.png?$720_N_PNG$"
+                            alt="Samsung Logo" class="object-cover">
+                    </div>
+                    <!-- Bella Vita -->
+                    <div
+                        class="flex-shrink-0 w-32 h-20 lg:w-40 lg:h-24 bg-gradient-to-br from-sky-400 to-white backdrop-blur-sm rounded-xl shadow-lg flex items-center justify-center border border-primary/20 p-4">
+                        <img src="https://bellavitaorganic.com/cdn/shop/files/Bella_Vita_Logo_360_E_2x_White.png?height=60&v=1716533001"
+                            alt="Bellavita Logo" class="object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 lg:py-28 gradient-dark">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-secondary mb-4">Our Services</h2>
+                <p class="text-lg lg:text-xl text-secondary/80 leading-relaxed max-w-3xl mx-auto">
+                    MindsLoom helps startups, businesses, and enterprises with the best AI solutions, digital marketing,
+                    development, content, and design services
+                </p>
+            </div>
+
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Marketing Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-bullhorn text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">Strategic Marketing</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Want measurable growth? Boost leads with SEO optimization, AI digital marketing, paid
+                                media campaigns, programmatic ads, social media strategy, and performance marketing.
+                            </p>
+                            <button onclick="window.location.href='pages/digital_marketing.html'"
+                                class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Development Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-code text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">Smart Development</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Need reliable platforms? We provide web, app, SaaS, full-stack, no-code development,
+                                script writing, API integration, cloud solutions, and AI-powered websites.
+                            </p>
+                            <button
+                                class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md"
+                                onclick="window.location.href='pages/development.html'">
+                                Learn More
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- AI Solutions Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-robot text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">AI Solutions</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Overwhelmed by data or repetitive tasks? We deliver AI automation, GPT app development,
+                                machine learning, predictive analytics, chatbots, and workflow integration.
+                                <button
+                                    class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md"
+                                    onclick="window.location.href='pages/ai_solutions.html'">
+                                    Learn More
+                                </button>
+
+                        </div>
+                    </div>
+
+                    <!-- Content and SEO Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-pen-nib text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">Content and SEO</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Struggling to engage your audience? Get AI content creation, SEO writing, brand
+                                storytelling, copywriting services, content marketing, and automated social media
+                                content.
+                            </p>
+                            <button
+                                class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md"
+                                onclick="window.location.href='pages/content.html'">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Solutions Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-cloud text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">Cloud Solutions</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Build a future-ready foundation for your business.
+                                We provide scalable cloud infrastructure, migration, and integration services that
+                                ensure speed, security, reliability, and cost efficiency across all operations.
+                            </p>
+                            <button
+                                class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md"
+                                onclick="window.location.href='pages/cloud.html'">
+                                Learn More
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- Branding Card -->
+                    <div class="swiper-slide">
+                        <div
+                            class="gradient-card rounded-2xl shadow-xl p-6 lg:p-8 h-full backdrop-blur-sm border border-white/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-palette text-2xl lg:text-3xl text-primary"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">Design and Branding</h3>
+                            </div>
+                            <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+                                Want your brand noticed? Creative design services include UI/UX, brand identity, motion
+                                graphics, 3D design, product design, visual branding, and interactive design.
+                            </p>
+                            <button
+                                class="w-full bg-primary text-secondary py-3 px-6 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transform transition-all duration-300 shadow-md"
+                                onclick="window.location.href='pages/branding.html'">
+                                Learn More
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 lg:py-28 gradient-card">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-primary mb-4">About Us</h2>
+                <p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Discover our journey, mission, and the passionate team behind innovative digital solutions
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Left Side - Rotating Blocks -->
+                <div class="space-y-6 relative">
+                    <div class="min-h-[280px] lg:min-h-[320px] relative">
+                        <div id="about-block-1"
+                            class="about-block absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary/70 text-secondary p-8 lg:p-10 rounded-3xl shadow-2xl border border-white/10 backdrop-blur-sm">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-user-tie text-secondary text-xl"></i>
+                                </div>
+                                <span class="text-secondary/60 text-sm font-medium">01</span>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-julius mb-4 text-secondary">Our Founder</h3>
+                            <p class="text-base lg:text-lg leading-relaxed text-secondary/90">
+                                A forward-thinking leader redefining how businesses grow with AI, turning creativity,
+                                data, and strategy into scalable digital success.
+                            </p>
+                        </div>
+
+                        <div id="about-block-2"
+                            class="about-block absolute inset-0 bg-gradient-to-br from-secondary via-beige to-secondary/80 text-primary p-8 lg:p-10 rounded-3xl shadow-2xl border border-primary/10 hidden">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-rocket text-primary text-xl"></i>
+                                </div>
+                                <span class="text-primary/60 text-sm font-medium">02</span>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-julius mb-4 text-primary">Our Story</h3>
+                            <p class="text-base lg:text-lg leading-relaxed text-primary/90">
+                                Founded in 2020, we've grown from a small startup to a trusted digital partner for
+                                businesses worldwide, delivering excellence.
+                            </p>
+                        </div>
+
+                        <div id="about-block-3"
+                            class="about-block absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 text-secondary p-8 lg:p-10 rounded-3xl shadow-2xl border border-white/10 hidden">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-bullseye text-secondary text-xl"></i>
+                                </div>
+                                <span class="text-secondary/60 text-sm font-medium">03</span>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-julius mb-4 text-secondary">Our Mission</h3>
+                            <p class="text-base lg:text-lg leading-relaxed text-secondary/90">
+                                To bridge the gap between innovative technology and business success through strategic
+                                digital solutions that create lasting impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Content -->
+                <div class="space-y-6 lg:space-y-8 relative">
+                    <div class="space-y-6 lg:space-y-8">
+
+                        <div id="about-content-1"
+                            class="about-content bg-white/50 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-lg border border-white/20">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-user-tie text-primary text-sm"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary">Founder's Note</h3>
+                            </div>
+                            <div class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6 space-y-4">
+                                <p>I didn’t create MindsLoom just to offer services! I built it because I saw a gap, one
+                                    that kept widening with every passing year. I built it to redefine how brands grow
+                                    in the AI era.</p>
+                                <p>Too many businesses were doing more but achieving less — running campaigns without
+                                    connection, building products without purpose, and missing the real impact of
+                                    technology.</p>
+                                <p>I wanted to change that.</p>
+                                <p>MindsLoom was born to bridge the gap between strategy, creativity, and intelligence —
+                                    blending AI, design, and marketing into one seamless ecosystem.
+                                </p>
+                                <p>Our mission is simple: to help startups and enterprises build smarter, scale faster,
+                                    and stay human in a digital-first world.</p>
+                            </div>
+                            <div
+                                class="flex items-center space-x-4 p-4 bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg">
+                                    <img src="images/founder.webp"
+                                        alt="Profile Picture"
+                                        class="w-16 h-16 rounded-full border-4 border-white object-cover">
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-medium">Founder & CEO, MindsLoom</p>
+                                    <div class="flex items-center space-x-2 mt-1">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                        <span class="text-xs text-gray-400">Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="about-content-2"
+                            class="about-content bg-white/50 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-lg border border-white/20 hidden">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-rocket text-primary text-sm"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary">Our Story</h3>
+                            </div>
+                            <div class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6 space-y-4">
+                                <p>At MindsLoom, we're not just building digital experiences, we're building business
+                                    engines.</p>
+                                <p>Our mission is simple: to help brands grow smarter, scale faster, and operate more
+                                    efficiently using the perfect blend of creativity, technology, and AI.</p>
+                                <p>We've brought together a team of strategists, developers, marketers, and AI experts,
+                                    each with deep roots in industries like fintech, web3, healthcare, fashion, SaaS,
+                                    and consumer brands. Whether you're a B2B enterprise, a funded startup, or a D2C
+                                    disruptor, we speak your language and know what it takes to win.</p>
+                                <p>From full-stack development to data-driven marketing to custom AI solutions, our work
+                                    is driven by outcomes, not just deliverables.</p>
+                                <p><strong>This isn't just an agency. This is your growth partner.</strong></p>
+                                <p>Join us as we shape the next chapter of digital transformation one project, one
+                                    breakthrough, and one result at a time.</p>
+                                <p class="italic text-primary font-medium">"We're the ones, the founders call when they
+                                    say: 'We need this to actually work this time.'"</p>
+                            </div>
+                        </div>
+
+                        <div id="about-content-3"
+                            class="about-content bg-white/50 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-lg border border-white/20 hidden">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-bullseye text-primary text-sm"></i>
+                                </div>
+                                <h3 class="text-2xl lg:text-3xl font-julius text-primary">Our Mission</h3>
+                            </div>
+                            <div class="text-base lg:text-lg text-gray-600 leading-relaxed mb-6 space-y-4">
+                                <p><strong>We exist to:</strong></p>
+                                <p>Engineer marketing that performs like a machine but feels like art.</p>
+                                <p>Code platforms that scale without crashing dreams.</p>
+                                <p>Integrate AI so it empowers humans, not replaces them.</p>
+                                <p>Our mission isn't to do more.<br>It's to help you do better — faster, smarter,
+                                    deeper.<br>And we're just getting started.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-gradient-to-r from-primary/5 to-transparent rounded-lg p-4">
+                                    <h4 class="font-semibold text-primary mb-3">What We Do:</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li>• Marketing that converts clicks into customers.</li>
+                                        <li>• Development that turns your idea into a product.</li>
+                                        <li>• AI solutions that scale your business while you sleep.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gradient-to-r from-primary/5 to-transparent rounded-lg p-4">
+                                    <h4 class="font-semibold text-primary mb-3">Who We Work With:</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li>• Startup founders who want to go from idea to execution fast.</li>
+                                        <li>• Established brands looking to digitize, scale, or automate.</li>
+                                        <li>• Agencies and consultants who need white-labeled execution partners.</li>
+                                        <li>• Creators and product makers launching in a competitive world.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="flex justify-end mt-6">
+                        <button id="about-cycle-btn"
+                            class="bg-gradient-to-r from-primary to-primary/80 text-secondary px-8 py-3 rounded-full font-semibold hover:from-primary/90 hover:to-primary/70 hover:scale-105 transform transition-all duration-300 shadow-lg flex items-center space-x-2">
+                            <span>Next</span>
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blogs" class="py-20 lg:py-28 gradient-accent">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="grid lg:grid-cols-4 gap-8 items-center min-h-[300px]">
+                <!-- Left Side - Coming Soon -->
+                <div class="lg:col-span-3 text-center lg:text-left">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl font-julius text-secondary mb-6">
+                        Coming Soon
+                    </h2>
+                    <p class="text-lg lg:text-xl text-secondary/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Stay tuned for insights, tutorials, and industry updates from our team of experts.
+                    </p>
+                </div>
+
+                <!-- Right Side - Vertical Title -->
+                <div class="lg:col-span-1 flex justify-center lg:justify-end">
+                    <div class="bg-primary text-secondary p-6 lg:p-8 rounded-2xl shadow-xl">
+                        <h3
+                            class="text-3xl lg:text-4xl font-julius writing-mode-vertical-rl text-orientation-mixed lg:transform">
+                            Blogs
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-28 gradient-dark">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-secondary mb-6">Contact Us</h2>
+                <h3 class="text-xl lg:text-2xl text-secondary/90 mb-4">Ready to Transform Your Business?</h3>
+                <p class="text-base lg:text-lg text-secondary/80 leading-relaxed max-w-3xl mx-auto">
+                    Let's discuss how our innovative solutions can help you achieve your digital goals and drive
+                    sustainable growth.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/20">
+                        <h3 class="text-2xl font-julius text-secondary mb-6">Get in Touch</h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Email</p>
+                                    <a href="mailto:business@mindsloom.com"
+                                        class="text-secondary hover:text-secondary/90 transition-colors">
+                                        mindsloom@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Phone</p>
+                                    <a href="tel:+919266811039"
+                                        class="text-secondary hover:text-secondary/90 transition-colors">
+                                        +91 9266811039
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Office</p>
+                                    <p class="text-secondary">MindsLoom Pvt. Ltd.<br>Sector 2, HSR Layout,<br>Bengaluru,
+                                        Karnataka<br>560102, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/20">
+                            <a href="https://wa.me/919266811039"
+                                class="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 hover:scale-105 transform transition-all duration-300 shadow-lg w-full justify-center">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-2xl border border-white/20">
+                        <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-6">Start Your Project</h3>
+
+                        <form id="detailed-contact-form" class="space-y-6">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Full Name <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" name="fullName" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Email Address <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" name="email" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Phone Number <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" name="phone" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Company/Organization
+                                    </label>
+                                    <input type="text" name="company"
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                            </div>
+
+                            <!-- Services Needed -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Services Needed <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-2 gap-3">
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="web-development"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Development</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="mobile-app"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Content & SEO</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="digital-marketing"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Digital Marketing</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="ai-solutions"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">AI Solutions</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="branding"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Design & Branding</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="consulting"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Cloud Solutions</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Budget -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Project Budget <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-2 gap-3">
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="5k-10k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹10,000 - ₹50,000</span>
+                                            <span class="text-gray-500 text-sm">Small Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="10k-25k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹60,000 - ₹2,00,000</span>
+                                            <span class="text-gray-500 text-sm">Medium Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="25k-50k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹2,50,000 - ₹5,00,000</span>
+                                            <span class="text-gray-500 text-sm">Large Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="50k+" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹5,00,000+</span>
+                                            <span class="text-gray-500 text-sm">Enterprise Projects</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Timeline -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Project Timeline <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-4 gap-3">
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="asap" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">ASAP</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="1-3months" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">1-3 Months</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="3-6months" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">3-6 Months</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="6months+" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">6+ Months</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Details -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Project Details <span class="text-red-500">*</span>
+                                </label>
+                                <textarea name="projectDetails" rows="4" required
+                                    placeholder="Please describe your project, goals, target audience, and any specific requirements..."
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none bg-white/80"></textarea>
+                            </div>
+
+                            <!-- How did you hear about us -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    How did you hear about us?
+                                </label>
+                                <select name="referralSource"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                    <option value="">Select an option</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="referral">Referral from Friend/Colleague</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                    <option value="advertisement">Online Advertisement</option>
+                                    <option value="event">Event/Conference</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Additional Options -->
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="newsletter" value="yes"
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">Subscribe to our newsletter for updates and
+                                        insights</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="nda" value="yes"
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">This project requires an NDA (Non-Disclosure
+                                        Agreement)</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="terms" value="yes" required
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">I agree to the <a href="#"
+                                            class="text-primary hover:underline">Terms of Service</a> and <a href="#"
+                                            class="text-primary hover:underline">Privacy Policy</a> <span
+                                            class="text-red-500">*</span></span>
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-4">
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-primary to-primary/80 text-secondary py-4 px-8 rounded-xl font-semibold text-lg hover:from-primary/90 hover:to-primary/70 hover:scale-105 transform transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Send Project Request</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <div class="mb-6">
+                        <h2 class="text-secondary font-bold mb-3 font-julius text-2xl">MindsLoom</h2>
+                        <p class="text-secondary/80 leading-relaxed mb-4">Digital Marketing & Growth Solutions</p>
+                        <div class="w-16 h-16 bg-secondary/20 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-2xl font-julius text-secondary">ML</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 mt-1 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">MindsLoom Pvt. Ltd.<br>Sector 2, HSR
+                                Layout,<br>Bengaluru, Karnataka<br>560102, India</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">+91 9266811039</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">mindsloom@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">About
+                                Us</a></li>
+                        <li><a href="pages/services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Services</a>
+                        </li>
+                        <li><a href="pages/work.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Our
+                                Work</a></li>
+                        <li><a href="pages/blogs.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Blog</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Contact</a>
+                        </li>
+                        <li><a href="pages/privacy-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Privacy
+                                Policy</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Terms
+                                of Service</a></li>
+                        <li><a href="pages/cookie-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pages/development.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Web
+                                Development</a></li>
+                        <li><a href="pages/development.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Mobile
+                                App Development</a></li>
+                        <li><a href="pages/digital_marketing.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Digital
+                                Marketing</a></li>
+                        <li><a href="pages/ai_solutions.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">AI
+                                Solutions</a></li>
+                        <li><a href="pages/branding.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Brand
+                                Identity</a></li>
+                        <li><a href="pages/digital_marketing.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="pages/digital_marketing.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Consulting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Follow Us</h3>
+                    <div class="flex flex-wrap gap-3 sm:gap-4 mb-6">
+                        <a href="https://www.linkedin.com/company/mindsloom/"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/_mindsloom_"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.624 5.367 11.99 11.988 11.99s11.99-5.366 11.99-11.99C24.007 5.367 18.641.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.24 0-.49-.068-.683-.205-.193-.137-.342-.342-.41-.581-.068-.24-.034-.49.102-.683.137-.193.342-.342.581-.41.24-.068.49-.034.683.102.193.137.342.342.41.581.068.24.034.49-.102.683-.137.193-.342.342-.581.41z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/mindsloom"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="bg-secondary/10 rounded-lg p-4">
+                        <h4 class="text-secondary font-semibold mb-2 text-sm">Stay Updated</h4>
+                        <p class="text-secondary/70 text-xs mb-3">Subscribe to our newsletter for the latest updates and
+                            insights.</p>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email"
+                                class="flex-1 px-3 py-2 text-xs bg-white/20 border border-secondary/30 rounded-lg text-secondary placeholder-secondary/60 focus:outline-none focus:ring-2 focus:ring-secondary/50">
+                            <button
+                                class="px-3 py-2 bg-secondary text-primary rounded-lg text-xs font-semibold hover:bg-secondary/90 transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-secondary/20 pt-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-center sm:text-left">
+                        <p class="text-secondary/70 text-sm">
+                            © 2024 MindsLoom Pvt. Ltd. All rights reserved.
+                        </p>
+                        <p class="text-secondary/60 text-xs mt-1">
+                            Digital Marketing & Growth Solutions | Connecting Ideas to Innovation
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-secondary/70 text-xs">Available for new projects</span>
+                        </div>
+                        <a href="https://wa.me/919266811039"
+                            class="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                            Quick Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Intro Loader
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                document.getElementById('intro-loader').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('intro-loader').style.display = 'none';
+                }, 500);
+            }, 2000);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/90', 'shadow-lg', 'header-scrolled');
+                header.classList.remove('header-transparent');
+            } else {
+                header.classList.remove('bg-white/90', 'shadow-lg', 'header-scrolled');
+                header.classList.add('header-transparent');
+            }
+        });
+
+        // Initialize header state
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('header');
+            header.classList.add('header-transparent');
+        });
+
+        // Quote Modal
+        const getQuoteBtn = document.getElementById('get-quote-btn');
+        const quoteModal = document.getElementById('quote-modal');
+        const closeModal = document.getElementById('close-modal');
+
+        getQuoteBtn.addEventListener('click', () => {
+            quoteModal.classList.remove('hidden');
+        });
+
+        closeModal.addEventListener('click', () => {
+            quoteModal.classList.add('hidden');
+        });
+
+        quoteModal.addEventListener('click', (e) => {
+            if (e.target === quoteModal) {
+                quoteModal.classList.add('hidden');
+            }
+        });
+
+
+        // Quote Form Submission via EmailJS
+        document.getElementById('quote-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_ptx0yg2', 'template_1r9424y', this)
+                .then(() => {
+                    alert("✅ Thank you for your quote request! We'll get back to you soon.");
+                    document.getElementById('quote-modal').classList.add('hidden');
+                    this.reset(); // clear form
+                }, (error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("❌ Oops! Something went wrong. Please try again later.");
+                });
+        });
+
+
+        // Detailed Contact Form Submission via EmailJS
+        document.getElementById('detailed-contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Validate at least one service is selected
+            const services = document.querySelectorAll('input[name="services"]:checked');
+            if (services.length === 0) {
+                alert('Please select at least one service.');
+                return;
+            }
+
+            // Combine selected services into a single comma-separated string
+            const selectedServices = Array.from(services).map(service => service.value).join(', ');
+
+            // Append the combined list to FormData so EmailJS can access it
+            const formData = new FormData(this);
+            formData.append('selectedServices', selectedServices);
+
+            // Send the form using EmailJS
+            emailjs.sendForm('service_ptx0yg2', 'template_enpdpsu', this)
+                .then(() => {
+                    const name = formData.get('fullName');
+                    const budget = formData.get('budget');
+                    const timeline = formData.get('timeline');
+
+                    alert(`✅ Thank you ${name}! We've received your project request.\n\nBudget: ${budget}\nTimeline: ${timeline}\nServices: ${selectedServices}\n\nOur team will contact you within 24 hours.`);
+                    this.reset();
+                }, (error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("❌ Oops! Something went wrong. Please try again later.");
+                });
+        });
+
+        // Services Swiper
+        const servicesSwiper = new Swiper('.services-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            speed: 800,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            mousewheel: {
+                thresholdDelta: 50,
+                sensitivity: 1,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+        // About Section Cycling
+        let currentAboutIndex = 0;
+        const aboutBlocks = document.querySelectorAll('.about-block');
+        const aboutContents = document.querySelectorAll('.about-content');
+        const cycleBtn = document.getElementById('about-cycle-btn');
+
+        cycleBtn.addEventListener('click', () => {
+            // Hide current
+            aboutBlocks[currentAboutIndex].classList.add('hidden');
+            aboutContents[currentAboutIndex].classList.add('hidden');
+
+            // Move to next
+            currentAboutIndex = (currentAboutIndex + 1) % aboutBlocks.length;
+
+            // Show next
+            aboutBlocks[currentAboutIndex].classList.remove('hidden');
+            aboutContents[currentAboutIndex].classList.remove('hidden');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9805ca18c0fe0c66',t:'MTc1ODA4MjYwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>

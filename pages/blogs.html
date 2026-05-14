@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Blog | MindsLoom - Digital Marketing Insights & Trends</title>
+    <meta name="description"
+        content="Stay updated with MindsLoom's blog featuring the latest digital marketing insights, trends, tips, and strategies to grow your brand online.">
+    <meta name="keywords" content="MindsLoom blog, digital marketing blog India, SEO insights, marketing trends, content marketing tips, online growth strategies">
+    <meta name="msvalidate.01" content="C8A862FC63849A014501B3257B7FEBDF"   />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mindsloom.com/blogs.html">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" href="android-chrome-512x512.png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Julius+Sans+One&family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#23423f',
+                        secondary: '#f4eee0',
+                        beige: '#f5f5dc'
+                    },
+                    fontFamily: {
+                        'Josefin Sans': ['Josefin Sans', 'sans-serif'],
+                        'julius': ['Julius Sans One', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'noto': ['Noto Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom animations and effects */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes navFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            53%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40%,
+            43% {
+                transform: translateY(-30px);
+            }
+
+            70% {
+                transform: translateY(-15px);
+            }
+
+            90% {
+                transform: translateY(-4px);
+            }
+        }
+
+        @keyframes subtleScale {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+        }
+
+        /* Navigation hover effects */
+        .nav-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .nav-item:hover {
+            animation: navFloat 0.6s ease-in-out;
+        }
+
+        /* Default state (transparent header) - hover to off-white */
+        .header-transparent .nav-item:hover {
+            color: #23423f !important;
+        }
+
+        /* Scrolled state (white header) - keep current hover behavior */
+        .header-scrolled .nav-item:hover {
+            color: #23423f !important;
+        }
+
+        /* Social icons hover animation */
+        .social-icon {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .social-icon:hover {
+            animation: navFloat 0.6s ease-in-out;
+        }
+
+        .header-transparent .social-icon:hover {
+            color: #23423f !important;
+        }
+
+        .header-scrolled .social-icon:hover {
+            color: #23423f !important;
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(120deg, #f4eee0 0%, #c7b491 50%, #d9cbb2 100%);
+        }
+
+        .gradient-dark {
+            background: linear-gradient(145deg, #f4eee0 0%, #e8ddc3 10%, rgba(218, 201, 160, 0.75) 25%, #23423f 80%, #253936 100%);
+        }
+
+        .gradient-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 30%, #f4eee0 70%, #e8ddc3 100%);
+        }
+
+        .gradient-accent {
+            background: linear-gradient(90deg, #f4eee0 0%, rgba(218, 201, 160, 0.9) 50%, #23423f 100%);
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(244, 238, 224, 0.1);
+        }
+
+        .blog-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active {
+            background: #23423f !important;
+            color: white !important;
+            border-color: #23423f !important;
+            transform: translateY(-1px);
+        }
+
+        .filter-btn:hover:not(.active) {
+            background: #f8f9fa !important;
+            border-color: #23423f !important;
+            color: #23423f !important;
+            transform: translateY(-1px);
+        }
+
+        .article-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .article-content.expanded {
+            max-height: 2000px;
+        }
+
+        .creative-bg {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 219, 226, 0.3) 0%, transparent 50%);
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        /* Modern Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(244, 238, 224, 0.1);
+            border-radius: 10px;
+            margin: 2px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #23423f 0%, rgba(35, 66, 63, 0.8) 50%, #23423f 100%);
+            border-radius: 10px;
+            border: 1px solid rgba(244, 238, 224, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #1a332f 0%, #23423f 50%, #2d5249 100%);
+            transform: scale(1.1);
+            box-shadow: 0 2px 8px rgba(35, 66, 63, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(135deg, #0f1f1c 0%, #1a332f 50%, #23423f 100%);
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: rgba(244, 238, 224, 0.1);
+        }
+
+        /* Firefox Custom Scrollbar */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #23423f rgba(244, 238, 224, 0.1);
+        }
+
+        .professional-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .loading-dots {
+            display: inline-block;
+        }
+
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        .gradient-dark {
+            background: linear-gradient(145deg, #253936 0%, #23423f 20%, rgba(218, 201, 160, 0.75) 75%, #e8ddc3 90%, #f4eee0 100%);
+        }
+
+        @keyframes dots {
+
+            0%,
+            20% {
+                content: '';
+            }
+
+            40% {
+                content: '.';
+            }
+
+            60% {
+                content: '..';
+            }
+
+            80%,
+            100% {
+                content: '...';
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7051CK0RY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q7051CK0RY');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P4HFBGC3');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="font-Josefin Sans bg-secondary overflow-x-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4HFBGC3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Home Link & Social Links (Desktop) -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../index.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium text-lg">Home</a>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_mindsloom_"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://x.com/mindsloom"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mindsloom/"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="flex items-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                    <a href="../index.html"
+                        class="w-10 h-10 lg:w-12 lg:h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg professional-hover">
+                        <span class="text-lg lg:text-xl font-julius text-secondary">ML</span>
+                    </a>
+                </div>
+
+                <!-- Navigation (Desktop) -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#work"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Work</a>
+                    <a href="services.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                    <a href="blogs.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium border-b-2 border-primary">Blogs</a>
+                    <a href="#about"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#contact"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-black hover:text-primary transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary/95 backdrop-blur-sm">
+            <div class="px-4 py-6 space-y-4">
+                <a href="../index.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Home</a>
+                <a href="#work"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Work</a>
+                <a href="services.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Services</a>
+                <a href="blogs.html" class="block text-beige font-medium py-2 border-l-4 border-beige pl-4">Blogs</a>
+                <a href="../index.html#about"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">About</a>
+                <a href="#contact"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Contact</a>
+                <div class="flex items-center space-x-6 pt-4 border-t border-secondary/20">
+                    <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                        class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_mindsloom_"
+                        class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://x.com/mindsloom"
+                        class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/mindsloom/"
+                        class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 lg:pt-24 pb-16 lg:pb-20 gradient-bg relative overflow-hidden">
+        <!-- Floating Shapes -->
+        <div class="floating-shapes">
+            <div class="shape w-32 h-32 bg-secondary/20 rounded-full top-20 left-10"></div>
+            <div class="shape w-24 h-24 bg-white/10 rounded-full top-40 right-20" style="animation-delay: 1s;"></div>
+            <div class="shape w-40 h-40 bg-secondary/5 rounded-full bottom-20 left-1/4" style="animation-delay: 2s;">
+            </div>
+            <div class="shape w-16 h-16 bg-primary/20 rounded-full top-1/3 right-1/3" style="animation-delay: 3s;">
+            </div>
+        </div>
+
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-white/10 rounded-full blur-lg animate-bounce"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-secondary/5 rounded-full blur-2xl animate-pulse"
+                style="animation-delay: 2s;"></div>
+
+            <!-- Floating Icons -->
+            <div class="absolute top-32 left-1/4 text-secondary/20 text-4xl"
+                style="animation: float 6s ease-in-out infinite; animation-delay: 0.5s;">
+                <i class="fas fa-blog"></i>
+            </div>
+            <div class="absolute top-48 right-1/3 text-secondary/20 text-3xl"
+                style="animation: float 6s ease-in-out infinite; animation-delay: 1.5s;">
+                <i class="fas fa-pen-fancy"></i>
+            </div>
+            <div class="absolute bottom-32 left-1/3 text-secondary/20 text-3xl"
+                style="animation: float 6s ease-in-out infinite; animation-delay: 2.5s;">
+                <i class="fas fa-newspaper"></i>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+            <div class="text-center">
+                <div
+                    class="inline-flex items-center space-x-3 bg-primary/15 backdrop-blur-sm rounded-full px-8 py-4 mb-10 border border-primary/30 shadow-lg professional-hover">
+                    <i class="fas fa-blog text-primary text-lg"></i>
+                    <span class="text-primary/90 text-lg font-medium">Digital Insights & Trends</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-julius text-primary leading-tight mb-6">
+                    Our <span class="relative">
+                        Blog
+                        <div
+                            class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent rounded-full">
+                        </div>
+                    </span>
+                </h1>
+
+                <p class="text-xl sm:text-2xl lg:text-3xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-10">
+                    Stay ahead with the latest insights in
+                    <span class="text-primary font-semibold">digital marketing</span>,
+                    <span class="text-primary font-semibold">technology trends</span>, and
+                    <span class="text-primary font-semibold">business growth</span>
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="#categories"
+                        class="bg-primary text-secondary px-10 py-5 rounded-2xl font-semibold text-xl hover:bg-primary/90 hover:shadow-2xl transform transition-all duration-300 shadow-xl border-2 border-transparent hover:border-primary/20 professional-hover">
+                        <i class="fas fa-arrow-down mr-2"></i>
+                        Explore Categories
+                    </a>
+                    <a href="#latest-posts"
+                        class="border-2 border-primary text-primary px-10 py-5 rounded-2xl font-semibold text-xl hover:bg-primary hover:text-secondary hover:shadow-2xl transform transition-all duration-300 shadow-xl professional-hover">
+                        <i class="fas fa-newspaper mr-2"></i>
+                        Latest Posts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="py-20 lg:py-28 bg-gradient-to-br from-white via-secondary/10 to-beige/20 relative overflow-hidden">
+        <!-- Creative Background -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center space-x-2 bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-star text-yellow-500 animate-pulse"></i>
+                    <span class="text-primary font-semibold">Featured Article</span>
+                    <i class="fas fa-star text-yellow-500 animate-pulse" style="animation-delay: 0.5s;"></i>
+                </div>
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-primary mb-6">Must Read</h2>
+                <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Our most popular and impactful content
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 professional-hover">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <div
+                        class="aspect-video lg:aspect-auto bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-chart-line text-6xl mb-6 animate-bounce"></i>
+                                <h4 class="text-2xl font-bold">AI Marketing Trends</h4>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse">Featured</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-white/50 rounded-full animate-pulse"></div>
+                                <div class="w-3 h-3 bg-white/50 rounded-full animate-pulse"
+                                    style="animation-delay: 0.2s;"></div>
+                                <div class="w-3 h-3 bg-white/50 rounded-full animate-pulse"
+                                    style="animation-delay: 0.4s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Digital
+                                Marketing</span>
+                            <span class="text-gray-500 text-sm">December 15, 2024</span>
+                            <div class="flex items-center gap-1">
+                                <i class="fas fa-eye text-gray-400 text-sm"></i>
+                                <span class="text-gray-500 text-sm">2.5k views</span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-4">
+                            The Future of AI in Digital Marketing: 10 Trends to Watch in 2025
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Discover how artificial intelligence is revolutionizing digital marketing strategies and
+                            what businesses need to know to stay competitive in the evolving landscape. From predictive
+                            analytics to personalized customer experiences...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                                    <span class="text-secondary font-semibold text-sm">ML</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">MindsLoom Team</p>
+                                    <p class="text-gray-500 text-sm">5 min read • Expert Level</p>
+                                </div>
+                            </div>
+                            <button onclick="openArticle(1)"
+                                class="bg-primary text-secondary px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transform transition-all duration-300 professional-hover">
+                                <i class="fas fa-book-open mr-2"></i>
+                                Read Full Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Filter Section -->
+    <section id="categories"
+        class="py-20 lg:py-28 bg-gradient-to-bl from-secondary/20 via-gray-50 to-beige/30 relative">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center space-x-2 bg-white rounded-full px-6 py-3 mb-6 border border-gray-200 shadow-sm">
+                    <i class="fas fa-filter text-primary"></i>
+                    <span class="text-primary font-semibold">Filter & Explore</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-primary mb-6">Browse by Category</h2>
+                <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Find content tailored to your interests and business needs
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <button onclick="filterPosts('all')"
+                        class="filter-btn active bg-primary text-white px-6 py-4 rounded-xl font-semibold border-2 border-primary shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-globe mr-3"></i>
+                            <span>All Posts</span>
+                        </div>
+                        <span class="bg-white/20 text-white px-2 py-1 rounded-full text-xs font-bold">8</span>
+                    </button>
+                    <button onclick="filterPosts('digital-marketing')"
+                        class="filter-btn bg-gray-50 text-gray-700 px-6 py-4 rounded-xl font-semibold border-2 border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-bullhorn mr-3 text-blue-500"></i>
+                            <span>Digital Marketing</span>
+                        </div>
+                        <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs font-bold">4</span>
+                    </button>
+                    <button onclick="filterPosts('technology')"
+                        class="filter-btn bg-gray-50 text-gray-700 px-6 py-4 rounded-xl font-semibold border-2 border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-robot mr-3 text-purple-500"></i>
+                            <span>Technology</span>
+                        </div>
+                        <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded-full text-xs font-bold">3</span>
+                    </button>
+                    <button onclick="filterPosts('business')"
+                        class="filter-btn bg-gray-50 text-gray-700 px-6 py-4 rounded-xl font-semibold border-2 border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-chart-line mr-3 text-green-500"></i>
+                            <span>Business</span>
+                        </div>
+                        <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs font-bold">2</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section id="latest-posts"
+        class="py-20 lg:py-28 bg-gradient-to-tr from-white via-beige/15 to-secondary/20 relative overflow-hidden">
+        <!-- Creative Background -->
+        <div class="absolute inset-0 opacity-5">
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/20 via-transparent to-blue-500/20">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center space-x-2 bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-full px-6 py-3 mb-6">
+                    <i class="fas fa-clock text-primary animate-pulse"></i>
+                    <span class="text-primary font-semibold">Fresh Content</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-primary mb-6">Latest Posts</h2>
+                <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Fresh insights and actionable strategies for your business growth
+                </p>
+            </div>
+
+            <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Blog posts will be populated by JavaScript -->
+            </div>
+
+            <div class="text-center mt-12">
+                <button id="load-more-btn" onclick="loadMorePosts()"
+                    class="bg-primary text-secondary px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-primary/90 transform transition-all duration-300 shadow-xl professional-hover">
+                    <i class="fas fa-plus mr-2"></i>
+                    <span class="loading-text">Load More Posts</span>
+                </button>
+                <p class="text-gray-500 text-sm mt-4">
+                    <span id="posts-count">6</span> of <span id="total-posts">8</span> posts shown
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div
+                class="bg-gradient-to-br from-white via-secondary/5 to-beige/10 rounded-3xl min-w-[95vh] max-h-[95vh] overflow-y-auto shadow-2xl">
+                <div
+                    class="sticky top-0 bg-gradient-to-r from-white/95 via-secondary/10 to-beige/15 backdrop-blur-sm border-b border-gray-200 p-6 flex items-center justify-between rounded-t-3xl">
+                    <h3 class="text-2xl font-julius text-primary">Full Article</h3>
+                    <button onclick="closeArticle()" class="text-gray-500 hover:text-gray-700 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="article-content" class="p-6">
+                    <!-- Article content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-28 gradient-dark">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-julius text-secondary mb-6">Contact Us</h2>
+                <h3 class="text-xl lg:text-2xl text-secondary/90 mb-4">Ready to Transform Your Business?</h3>
+                <p class="text-base lg:text-lg text-secondary/80 leading-relaxed max-w-3xl mx-auto">
+                    Let's discuss how our innovative solutions can help you achieve your digital goals and drive
+                    sustainable growth.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/20">
+                        <h3 class="text-2xl font-julius text-secondary mb-6">Get in Touch</h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Email</p>
+                                    <a href="mailto:business@mindsloom.com"
+                                        class="text-secondary hover:text-secondary/90 transition-colors">
+                                        mindsloom@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Phone</p>
+                                    <a href="tel:+919266811039"
+                                        class="text-secondary hover:text-secondary/90 transition-colors">
+                                        +91 9266811039
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-secondary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-secondary/70 text-sm">Office</p>
+                                    <p class="text-secondary">MindsLoom Pvt. Ltd.<br>Sector 2, HSR Layout,<br>Bengaluru,
+                                        Karnataka<br>560102, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/20">
+                            <a href="https://wa.me/919266811039"
+                                class="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 hover:scale-105 transform transition-all duration-300 shadow-lg w-full justify-center">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-2xl border border-white/20">
+                        <h3 class="text-2xl lg:text-3xl font-julius text-primary mb-6">Start Your Project</h3>
+
+                        <form id="detailed-contact-form" class="space-y-6">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Full Name <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" name="fullName" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Email Address <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" name="email" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Phone Number <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" name="phone" required
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Company/Organization
+                                    </label>
+                                    <input type="text" name="company"
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                </div>
+                            </div>
+
+                            <!-- Services Needed -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Services Needed <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-2 gap-3">
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="web-development"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Development</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="mobile-app"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Content & SEO</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="digital-marketing"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Digital Marketing</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="ai-solutions"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">AI Solutions</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="branding"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Design & Branding</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="checkbox" name="services" value="consulting"
+                                            class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                        <span class="text-gray-700 font-medium">Cloud Solutions</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Budget -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Project Budget <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-2 gap-3">
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="5k-10k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹10,000 - ₹50,000</span>
+                                            <span class="text-gray-500 text-sm">Small Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="10k-25k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹60,000 - ₹2,00,000</span>
+                                            <span class="text-gray-500 text-sm">Medium Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="25k-50k" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹2,50,000 - ₹5,00,000</span>
+                                            <span class="text-gray-500 text-sm">Large Projects</span>
+                                        </div>
+                                    </label>
+                                    <label
+                                        class="flex items-center space-x-3 p-4 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="budget" value="50k+" required
+                                            class="w-5 h-5 text-primary border-gray-300 focus:ring-primary">
+                                        <div>
+                                            <span class="text-gray-700 font-medium block">₹5,00,000+</span>
+                                            <span class="text-gray-500 text-sm">Enterprise Projects</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Timeline -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">
+                                    Project Timeline <span class="text-red-500">*</span>
+                                </label>
+                                <div class="grid md:grid-cols-4 gap-3">
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="asap" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">ASAP</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="1-3months" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">1-3 Months</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="3-6months" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">3-6 Months</span>
+                                    </label>
+                                    <label
+                                        class="flex items-center justify-center space-x-2 p-3 rounded-xl border border-gray-200 hover:bg-primary/5 hover:border-primary/30 transition-all duration-300 cursor-pointer">
+                                        <input type="radio" name="timeline" value="6months+" required
+                                            class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+                                        <span class="text-gray-700 font-medium text-sm">6+ Months</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Project Details -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Project Details <span class="text-red-500">*</span>
+                                </label>
+                                <textarea name="projectDetails" rows="4" required
+                                    placeholder="Please describe your project, goals, target audience, and any specific requirements..."
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none bg-white/80"></textarea>
+                            </div>
+
+                            <!-- How did you hear about us -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    How did you hear about us?
+                                </label>
+                                <select name="referralSource"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-white/80">
+                                    <option value="">Select an option</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="referral">Referral from Friend/Colleague</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                    <option value="advertisement">Online Advertisement</option>
+                                    <option value="event">Event/Conference</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Additional Options -->
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="newsletter" value="yes"
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">Subscribe to our newsletter for updates and
+                                        insights</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="nda" value="yes"
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">This project requires an NDA (Non-Disclosure
+                                        Agreement)</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="checkbox" name="terms" value="yes" required
+                                        class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <span class="text-gray-700">I agree to the <a href="#"
+                                            class="text-primary hover:underline">Terms of Service</a> and <a href="#"
+                                            class="text-primary hover:underline">Privacy Policy</a> <span
+                                            class="text-red-500">*</span></span>
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-4">
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-primary to-primary/80 text-secondary py-4 px-8 rounded-xl font-semibold text-lg hover:from-primary/90 hover:to-primary/70 hover:scale-105 transform transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Send Project Request</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <div class="mb-6">
+                        <h2 class="text-secondary font-bold mb-3 font-julius text-2xl">MindsLoom</h2>
+                        <p class="text-secondary/80 leading-relaxed mb-4">Digital Marketing & Growth Solutions</p>
+                        <div class="w-16 h-16 bg-secondary/20 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-2xl font-julius text-secondary">ML</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 mt-1 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">MindsLoom Pvt. Ltd.<br>Sector 2, HSR
+                                Layout,<br>Bengaluru, Karnataka<br>560102, India</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">+91 9266811039</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <p class="text-secondary/80 text-sm">business@mindsloom.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html#about"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Services</a>
+                        </li>
+                        <li><a href="#work"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Our
+                                Work</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Blog</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Contact</a>
+                        </li>
+                        <li><a href="privacy-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Privacy
+                                Policy</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Terms
+                                of Service</a></li>
+                        <li><a href="cookie-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Web
+                                Development</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Mobile
+                                App Development</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Digital
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">AI
+                                Solutions</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Blockchain</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Cloud
+                                Solutions</a></li>
+                        <li><a href="services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Brand
+                                Identity</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Follow Us</h3>
+                    <div class="flex flex-wrap gap-3 sm:gap-4 mb-6">
+                        <a href="https://www.linkedin.com/company/mindsloom/"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/_mindsloom_"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.624 5.367 11.99 11.988 11.99s11.99-5.366 11.99-11.99C24.007 5.367 18.641.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.24 0-.49-.068-.683-.205-.193-.137-.342-.342-.41-.581-.068-.24-.034-.49.102-.683.137-.193.342-.342.581-.41.24-.068.49-.034.683.102.193.137.342.342.41.581.068.24.034.49-.102.683-.137.193-.342.342-.581.41z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-secondary/20 pt-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-center sm:text-left">
+                        <p class="text-secondary/70 text-sm">
+                            © 2024 MindsLoom Pvt. Ltd. All rights reserved.
+                        </p>
+                        <p class="text-secondary/60 text-xs mt-1">
+                            Digital Marketing & Growth Solutions | Connecting Ideas to Innovation
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-secondary/70 text-xs">Available for new projects</span>
+                        </div>
+                        <a href="https://wa.me/919266811039"
+                            class="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                            Quick Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Blog posts data
+        const blogPosts = [
+            {
+                id: 1,
+                title: "Mobile-First Marketing Strategies That Convert",
+                excerpt: "Learn how to optimize your marketing campaigns for mobile users and increase conversion rates by up to 40%.",
+                category: "digital-marketing",
+                categoryLabel: "Digital Marketing",
+                categoryColor: "green",
+                date: "Dec 12, 2024",
+                readTime: "3 min read",
+                views: "1.2k",
+                icon: "fas fa-mobile-alt",
+                gradient: "from-green-500 to-teal-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Mobile-First Marketing Strategies That Convert</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Digital Marketing</span>
+                        <span>Dec 12, 2024</span>
+                        <span>3 min read</span>
+                        <span>1.2k views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">In today's digital landscape, mobile devices account for over 60% of web traffic. This shift demands a fundamental change in how we approach marketing strategies.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Why Mobile-First Matters</h2>
+                        <p>Mobile-first isn't just about responsive design—it's about understanding user behavior on mobile devices and crafting experiences that convert.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Key Statistics:</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Mobile users are 5x more likely to abandon a task if the site isn't mobile-optimized</li>
+                            <li>53% of mobile users leave a website that takes longer than 3 seconds to load</li>
+                            <li>Mobile commerce is expected to account for 72.9% of e-commerce sales by 2025</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Proven Mobile Marketing Strategies</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">1. Optimize for Speed</h3>
+                        <p>Page speed is crucial for mobile users. Implement AMP (Accelerated Mobile Pages), optimize images, and minimize JavaScript to ensure lightning-fast loading times.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">2. Simplify Navigation</h3>
+                        <p>Mobile screens are small. Use hamburger menus, sticky navigation, and clear call-to-action buttons that are easy to tap with a thumb.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">3. Leverage Location-Based Marketing</h3>
+                        <p>Use geolocation to deliver personalized content, local offers, and store locators. This increases relevance and drives foot traffic to physical locations.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">4. Implement Progressive Web Apps (PWAs)</h3>
+                        <p>PWAs combine the best of web and mobile apps, offering offline functionality, push notifications, and app-like experiences without requiring downloads.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Measuring Success</h2>
+                        <p>Track mobile-specific metrics like mobile conversion rates, bounce rates, and time on site. Use tools like Google Analytics 4 to understand mobile user journeys.</p>
+                        
+                        <div class="bg-green-50 border-l-4 border-green-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-green-800 mb-2">Pro Tip</h4>
+                            <p class="text-green-700">Test your mobile experience regularly on different devices and network speeds. What works on your high-end smartphone might not work for users on older devices or slower connections.</p>
+                        </div>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Conclusion</h2>
+                        <p>Mobile-first marketing isn't optional—it's essential. By prioritizing mobile user experience, optimizing for speed, and leveraging mobile-specific features, you can significantly increase your conversion rates and stay ahead of the competition.</p>
+                    </div>
+                `
+            },
+            {
+                id: 2,
+                title: "Building a Brand Identity That Resonates",
+                excerpt: "Discover the key elements of creating a memorable brand identity that connects with your target audience.",
+                category: "digital-marketing",
+                categoryLabel: "Branding",
+                categoryColor: "purple",
+                date: "Dec 10, 2024",
+                readTime: "4 min read",
+                views: "890",
+                icon: "fas fa-palette",
+                gradient: "from-purple-500 to-pink-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Building a Brand Identity That Resonates</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Branding</span>
+                        <span>Dec 10, 2024</span>
+                        <span>4 min read</span>
+                        <span>890 views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">A strong brand identity is more than just a logo—it's the complete visual and emotional experience that customers have with your business.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">The Foundation of Brand Identity</h2>
+                        <p>Before diving into visual elements, you need to establish your brand's core foundation:</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Brand Purpose</h3>
+                        <p>Why does your brand exist beyond making money? Your purpose should inspire both your team and your customers.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Brand Values</h3>
+                        <p>What principles guide your business decisions? These values should be authentic and reflected in every customer interaction.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Brand Personality</h3>
+                        <p>If your brand were a person, what would they be like? Professional? Playful? Innovative? This personality should shine through in your communications.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Visual Identity Elements</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Logo Design</h3>
+                        <p>Your logo should be simple, memorable, and scalable. It needs to work across all mediums, from business cards to billboards.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Color Palette</h3>
+                        <p>Colors evoke emotions and associations. Choose a primary color that reflects your brand personality and 2-3 supporting colors for versatility.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Typography</h3>
+                        <p>Select fonts that are readable and reflect your brand's personality. Establish a hierarchy with primary and secondary typefaces.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Brand Voice and Messaging</h2>
+                        <p>Your brand voice is how you communicate with your audience. It should be consistent across all touchpoints and reflect your brand personality.</p>
+                        
+                        <div class="bg-purple-50 border-l-4 border-purple-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-purple-800 mb-2">Remember</h4>
+                            <p class="text-purple-700">Consistency is key. Every interaction with your brand should reinforce the same identity and values.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 3,
+                title: "How AI is Transforming Customer Service",
+                excerpt: "Explore the latest AI tools and techniques that are revolutionizing customer support and engagement.",
+                category: "technology",
+                categoryLabel: "AI",
+                categoryColor: "orange",
+                date: "Dec 8, 2024",
+                readTime: "6 min read",
+                views: "2.1k",
+                icon: "fas fa-robot",
+                gradient: "from-orange-500 to-red-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">How AI is Transforming Customer Service</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">AI</span>
+                        <span>Dec 8, 2024</span>
+                        <span>6 min read</span>
+                        <span>2.1k views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">Artificial Intelligence is revolutionizing customer service, enabling businesses to provide 24/7 support, personalized experiences, and faster resolution times.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">The AI Revolution in Customer Service</h2>
+                        <p>AI-powered customer service tools are becoming increasingly sophisticated, handling complex queries and providing human-like interactions.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Chatbots and Virtual Assistants</h3>
+                        <p>Modern chatbots use natural language processing (NLP) to understand customer intent and provide relevant responses. They can handle routine inquiries, freeing up human agents for complex issues.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Predictive Analytics</h3>
+                        <p>AI analyzes customer data to predict issues before they occur, enabling proactive support and reducing customer frustration.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Sentiment Analysis</h3>
+                        <p>AI can analyze customer communications to detect emotions and escalate urgent or negative interactions to human agents immediately.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Benefits of AI in Customer Service</h2>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>24/7 availability without additional staffing costs</li>
+                            <li>Instant responses to common queries</li>
+                            <li>Consistent service quality</li>
+                            <li>Multilingual support capabilities</li>
+                            <li>Data-driven insights for service improvement</li>
+                        </ul>
+                        
+                        <div class="bg-orange-50 border-l-4 border-orange-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-orange-800 mb-2">Best Practice</h4>
+                            <p class="text-orange-700">Always provide an easy way for customers to reach human agents when AI can't resolve their issues. The goal is to enhance, not replace, human customer service.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 4,
+                title: "Cloud Migration: A Complete Guide for SMBs",
+                excerpt: "Step-by-step guide to successfully migrating your business to the cloud while minimizing downtime.",
+                category: "technology",
+                categoryLabel: "Cloud",
+                categoryColor: "cyan",
+                date: "Dec 5, 2024",
+                readTime: "8 min read",
+                views: "756",
+                icon: "fas fa-cloud",
+                gradient: "from-cyan-500 to-blue-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Cloud Migration: A Complete Guide for SMBs</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-semibold">Cloud</span>
+                        <span>Dec 5, 2024</span>
+                        <span>8 min read</span>
+                        <span>756 views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">Cloud migration can seem daunting for small and medium businesses, but with proper planning and execution, it can significantly improve efficiency and reduce costs.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Why Migrate to the Cloud?</h2>
+                        <p>Cloud computing offers numerous benefits for SMBs, including cost savings, scalability, and improved security.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Cost Benefits</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Reduced hardware and maintenance costs</li>
+                            <li>Pay-as-you-use pricing models</li>
+                            <li>Lower IT staffing requirements</li>
+                            <li>Reduced energy costs</li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Operational Benefits</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Automatic software updates</li>
+                            <li>Enhanced collaboration capabilities</li>
+                            <li>Improved disaster recovery</li>
+                            <li>Access from anywhere</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Migration Planning Process</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">1. Assessment Phase</h3>
+                        <p>Evaluate your current infrastructure, applications, and data to determine what can be migrated and in what order.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">2. Strategy Development</h3>
+                        <p>Choose your migration approach: lift-and-shift, re-platforming, or re-architecting based on your needs and budget.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">3. Pilot Migration</h3>
+                        <p>Start with non-critical applications to test your migration process and identify potential issues.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">4. Full Migration</h3>
+                        <p>Execute the migration in phases, starting with the least critical systems and moving to mission-critical applications.</p>
+                        
+                        <div class="bg-cyan-50 border-l-4 border-cyan-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-cyan-800 mb-2">Pro Tip</h4>
+                            <p class="text-cyan-700">Always have a rollback plan. Ensure you can quickly revert to your previous setup if something goes wrong during migration.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 5,
+                title: "Blockchain Beyond Crypto: Real Business Applications",
+                excerpt: "Discover practical blockchain applications that can transform your business operations and security.",
+                category: "technology",
+                categoryLabel: "Blockchain",
+                categoryColor: "yellow",
+                date: "Dec 3, 2024",
+                readTime: "7 min read",
+                views: "634",
+                icon: "fab fa-bitcoin",
+                gradient: "from-yellow-500 to-orange-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Blockchain Beyond Crypto: Real Business Applications</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Blockchain</span>
+                        <span>Dec 3, 2024</span>
+                        <span>7 min read</span>
+                        <span>634 views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">While blockchain is often associated with cryptocurrency, its applications extend far beyond digital currency into practical business solutions.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Understanding Blockchain Technology</h2>
+                        <p>Blockchain is a distributed ledger technology that provides transparency, security, and immutability—making it valuable for various business applications.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Supply Chain Management</h2>
+                        <p>Blockchain can track products from manufacture to delivery, ensuring authenticity and reducing fraud.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Benefits:</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Complete product traceability</li>
+                            <li>Reduced counterfeiting</li>
+                            <li>Improved quality control</li>
+                            <li>Enhanced consumer trust</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Digital Identity Verification</h2>
+                        <p>Blockchain can create secure, tamper-proof digital identities, reducing identity theft and streamlining verification processes.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Smart Contracts</h2>
+                        <p>Automated contracts that execute when predetermined conditions are met, reducing the need for intermediaries and speeding up transactions.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Healthcare Records</h2>
+                        <p>Secure, interoperable patient records that can be accessed by authorized healthcare providers while maintaining privacy.</p>
+                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-yellow-800 mb-2">Consider This</h4>
+                            <p class="text-yellow-700">Blockchain implementation requires careful planning and consideration of energy consumption, scalability, and regulatory compliance.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 6,
+                title: "Data-Driven Marketing: Metrics That Matter",
+                excerpt: "Learn which marketing metrics to track and how to use data to optimize your campaigns for better ROI.",
+                category: "digital-marketing",
+                categoryLabel: "Analytics",
+                categoryColor: "indigo",
+                date: "Dec 1, 2024",
+                readTime: "5 min read",
+                views: "1.5k",
+                icon: "fas fa-chart-bar",
+                gradient: "from-indigo-500 to-purple-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Data-Driven Marketing: Metrics That Matter</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-semibold">Analytics</span>
+                        <span>Dec 1, 2024</span>
+                        <span>5 min read</span>
+                        <span>1.5k views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">In today's competitive landscape, successful marketing requires more than intuition—it demands data-driven decision making and continuous optimization.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Essential Marketing Metrics</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Customer Acquisition Cost (CAC)</h3>
+                        <p>The total cost of acquiring a new customer, including marketing spend, sales team costs, and other related expenses.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Customer Lifetime Value (CLV)</h3>
+                        <p>The total revenue a customer will generate throughout their relationship with your business.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Return on Ad Spend (ROAS)</h3>
+                        <p>Revenue generated for every dollar spent on advertising. A ROAS of 4:1 means $4 in revenue for every $1 spent.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Conversion Rate</h3>
+                        <p>The percentage of visitors who complete a desired action, such as making a purchase or signing up for a newsletter.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Advanced Analytics</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Attribution Modeling</h3>
+                        <p>Understanding which touchpoints contribute to conversions helps optimize budget allocation across channels.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Cohort Analysis</h3>
+                        <p>Track groups of customers over time to understand retention patterns and identify opportunities for improvement.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Tools for Data-Driven Marketing</h2>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Google Analytics 4 for web analytics</li>
+                            <li>Facebook Analytics for social media insights</li>
+                            <li>HubSpot for inbound marketing metrics</li>
+                            <li>Mixpanel for product analytics</li>
+                        </ul>
+                        
+                        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-indigo-800 mb-2">Key Insight</h4>
+                            <p class="text-indigo-700">Focus on metrics that directly impact business outcomes. Vanity metrics like page views or followers don't always translate to revenue.</p>
+                        </div>
+                    </div>
+                `
+            },
+            // Additional posts for load more functionality
+            {
+                id: 7,
+                title: "The Rise of Voice Search: Optimizing for the Future",
+                excerpt: "Voice search is changing SEO. Learn how to optimize your content for voice queries and stay ahead of the curve.",
+                category: "digital-marketing",
+                categoryLabel: "SEO",
+                categoryColor: "teal",
+                date: "Nov 28, 2024",
+                readTime: "4 min read",
+                views: "923",
+                icon: "fas fa-microphone",
+                gradient: "from-teal-500 to-cyan-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">The Rise of Voice Search: Optimizing for the Future</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-semibold">SEO</span>
+                        <span>Nov 28, 2024</span>
+                        <span>4 min read</span>
+                        <span>923 views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">Voice search is rapidly becoming the preferred way users interact with devices. By 2024, it's estimated that 50% of all searches will be voice-based.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Understanding Voice Search Behavior</h2>
+                        <p>Voice searches are typically longer, more conversational, and often phrased as questions. Users speak differently than they type.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Key Differences:</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Longer, more natural phrases</li>
+                            <li>Question-based queries</li>
+                            <li>Local intent focus</li>
+                            <li>Immediate action orientation</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Voice Search Optimization Strategies</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">1. Focus on Featured Snippets</h3>
+                        <p>Voice assistants often read featured snippets as answers. Structure your content to answer specific questions clearly and concisely.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">2. Optimize for Local Search</h3>
+                        <p>Many voice searches have local intent. Ensure your Google My Business listing is complete and accurate.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">3. Use Conversational Keywords</h3>
+                        <p>Target long-tail keywords that match how people naturally speak and ask questions.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">4. Improve Page Speed</h3>
+                        <p>Voice search results typically load 52% faster than average pages. Optimize your site speed for better voice search performance.</p>
+                        
+                        <div class="bg-teal-50 border-l-4 border-teal-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-teal-800 mb-2">Future Trend</h4>
+                            <p class="text-teal-700">Voice commerce is the next frontier. Prepare for voice-activated purchasing by optimizing product descriptions for voice search.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 8,
+                title: "Sustainable Business Practices: Going Green for Growth",
+                excerpt: "Discover how sustainable business practices can reduce costs, attract customers, and drive long-term growth.",
+                category: "business",
+                categoryLabel: "Sustainability",
+                categoryColor: "emerald",
+                date: "Nov 25, 2024",
+                readTime: "6 min read",
+                views: "567",
+                icon: "fas fa-leaf",
+                gradient: "from-emerald-500 to-green-600",
+                content: `
+                    <h1 class="text-3xl font-julius text-primary mb-6">Sustainable Business Practices: Going Green for Growth</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-600">
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">Sustainability</span>
+                        <span>Nov 25, 2024</span>
+                        <span>6 min read</span>
+                        <span>567 views</span>
+                    </div>
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 mb-6">Sustainability is no longer just about environmental responsibility—it's a business imperative that drives innovation, reduces costs, and attracts conscious consumers.</p>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">The Business Case for Sustainability</h2>
+                        <p>Companies with strong sustainability practices often outperform their peers in terms of profitability and market value.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Financial Benefits:</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Reduced operational costs through efficiency</li>
+                            <li>Lower energy and waste disposal expenses</li>
+                            <li>Access to green financing options</li>
+                            <li>Tax incentives and rebates</li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Market Advantages:</h3>
+                        <ul class="list-disc pl-6 mb-6">
+                            <li>Attract environmentally conscious consumers</li>
+                            <li>Differentiate from competitors</li>
+                            <li>Improve brand reputation</li>
+                            <li>Meet B2B sustainability requirements</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-julius text-primary mt-8 mb-4">Implementing Sustainable Practices</h2>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Energy Efficiency</h3>
+                        <p>Upgrade to LED lighting, implement smart building systems, and consider renewable energy sources like solar panels.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Waste Reduction</h3>
+                        <p>Implement recycling programs, reduce packaging, and adopt circular economy principles in your operations.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Sustainable Supply Chain</h3>
+                        <p>Work with suppliers who share your sustainability values and implement green logistics practices.</p>
+                        
+                        <h3 class="text-xl font-julius text-primary mt-6 mb-3">Digital Transformation</h3>
+                        <p>Reduce paper usage through digital processes, enable remote work to reduce commuting, and optimize digital infrastructure for energy efficiency.</p>
+                        
+                        <div class="bg-emerald-50 border-l-4 border-emerald-500 p-6 mt-8">
+                            <h4 class="text-lg font-semibold text-emerald-800 mb-2">Start Small</h4>
+                            <p class="text-emerald-700">Begin with simple changes like reducing paper usage or implementing recycling programs. Small steps can lead to significant impact over time.</p>
+                        </div>
+                    </div>
+                `
+            }
+        ];
+
+        // State management
+        let currentFilter = 'all';
+        let displayedPosts = 6;
+        let isLoading = false;
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            renderBlogPosts();
+            updatePostCounts();
+
+            // Initialize header state
+            const header = document.getElementById('header');
+            header.classList.add('header-transparent');
+        });
+
+        // Filter posts by category
+        function filterPosts(category) {
+            currentFilter = category;
+            displayedPosts = 6; // Reset to initial count
+
+            // Update filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = '#f8f9fa';
+                btn.style.color = '#374151';
+                btn.style.borderColor = '#e5e7eb';
+            });
+
+            event.target.classList.add('active');
+            event.target.style.background = '#23423f';
+            event.target.style.color = 'white';
+            event.target.style.borderColor = '#23423f';
+
+            renderBlogPosts();
+            updatePostCounts();
+        }
+
+        // Render blog posts based on current filter
+        function renderBlogPosts() {
+            const blogGrid = document.getElementById('blog-grid');
+            const filteredPosts = currentFilter === 'all'
+                ? blogPosts
+                : blogPosts.filter(post => post.category === currentFilter);
+
+            const postsToShow = filteredPosts.slice(0, displayedPosts);
+
+            blogGrid.innerHTML = postsToShow.map(post => `
+                <article class="blog-card bg-white rounded-3xl overflow-hidden shadow-xl border border-white/20 group" data-category="${post.category}">
+                    <div class="aspect-video bg-gradient-to-br ${post.gradient} relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="${post.icon} text-4xl mb-4 animate-bounce"></i>
+                                <h4 class="text-xl font-bold">${post.categoryLabel}</h4>
+                            </div>
+                        </div>
+                        ${post.id <= 3 ? '<div class="absolute top-4 left-4"><span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse">New</span></div>' : ''}
+                        <div class="absolute bottom-4 right-4 flex items-center gap-2 text-white/80 text-sm">
+                            <i class="fas fa-eye"></i>
+                            <span>${post.views}</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="bg-${post.categoryColor}-100 text-${post.categoryColor}-800 px-2 py-1 rounded-full text-xs font-semibold">${post.categoryLabel}</span>
+                            <span class="text-gray-500 text-sm">${post.date}</span>
+                        </div>
+                        <h3 class="text-xl font-julius text-primary mb-3 group-hover:text-${post.categoryColor}-600 transition-colors">
+                            ${post.title}
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            ${post.excerpt}
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-${post.categoryColor}-100 rounded-full flex items-center justify-center">
+                                    <span class="text-${post.categoryColor}-600 font-semibold text-xs">ML</span>
+                                </div>
+                                <span class="text-gray-500 text-sm">${post.readTime}</span>
+                            </div>
+                            <button onclick="openArticle(${post.id})" class="text-${post.categoryColor}-600 hover:text-${post.categoryColor}-700 font-semibold text-sm hover:scale-105 transform transition-all duration-300">
+                                <i class="fas fa-book-open mr-1"></i>
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            // Update load more button visibility
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            if (displayedPosts >= filteredPosts.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-flex';
+            }
+        }
+
+        // Load more posts
+        function loadMorePosts() {
+            if (isLoading) return;
+
+            isLoading = true;
+            const loadingText = document.querySelector('.loading-text');
+            const originalText = loadingText.textContent;
+
+            // Show loading state
+            loadingText.innerHTML = '<span class="loading-dots">Loading</span>';
+
+            // Simulate loading delay
+            setTimeout(() => {
+                displayedPosts += 2;
+                renderBlogPosts();
+                updatePostCounts();
+
+                // Reset loading state
+                loadingText.textContent = originalText;
+                isLoading = false;
+            }, 1000);
+        }
+
+        // Update post counts
+        function updatePostCounts() {
+            const filteredPosts = currentFilter === 'all'
+                ? blogPosts
+                : blogPosts.filter(post => post.category === currentFilter);
+
+            document.getElementById('posts-count').textContent = Math.min(displayedPosts, filteredPosts.length);
+            document.getElementById('total-posts').textContent = filteredPosts.length;
+        }
+
+        // Open article modal
+        function openArticle(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+
+            const modal = document.getElementById('article-modal');
+            const content = document.getElementById('article-content');
+
+            content.innerHTML = post.content;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close article modal
+        function closeArticle() {
+            const modal = document.getElementById('article-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/90', 'shadow-lg', 'header-scrolled');
+                header.classList.remove('header-transparent');
+            } else {
+                header.classList.remove('bg-white/90', 'shadow-lg', 'header-scrolled');
+                header.classList.add('header-transparent');
+            }
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+
+            // Show success message
+            alert(`Thank you ${name}! We've received your message and will get back to you within 24 hours.`);
+
+            // Reset form
+            e.target.reset();
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('article-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'article-modal') {
+                closeArticle();
+            }
+        });
+
+        // Keyboard navigation for modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeArticle();
+            }
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'980bfe98e0db5994',t:'MTc1ODE0NzY2NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
